@@ -105,6 +105,7 @@ connection.on('connected', (event) => {
 		passive: false,
 		durable: true,
 		exclusive: false,
+		autoBufferAck: true,
 		consumer_arguments: {'x-priority': 1}
 	});
 
